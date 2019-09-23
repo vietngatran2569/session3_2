@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh hoc luc</title>
+</head>
+<body>
+<script>
+    let baiKtra=parseFloat(prompt('Nhap diem thi cua ban: ',''));
+    let diemGiuaKi=parseFloat(prompt('Nhap vao diem thi giua ki cua ban: ',''));
+    let diemCuoiKi=parseFloat(prompt('Nhap diem cuoi ki cua ban: ',''));
+    let diemTb=(baiKtra+diemGiuaKi*2+diemCuoiKi*3)/6;
+    if (diemTb>=8) {
+        alert(diemTb+' Hoc luc gioi');
+    }else if(6<=diemTb && diemTb<8){
+        alert(diemTb+' Hoc luc kha');
+    }else if(5<=diemTb && diemTb<6){
+        alert(diemTb+' Hoc luc trung binh');
+    }else {
+        alert(diemTb+' Hoc luc yeu');
+    }
+</script>
+</body>
+</html>
